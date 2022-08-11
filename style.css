@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(font/Roboto-Regular.ttf);
+}
+html{
+  font-family: "Roboto";
+}
+body {
+  
+  display: flex;
+
+  margin: 0;
+}
+.main_body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: lightgray;
+}
+.content {
+  width: 960px;
+}
+.nav_bar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  
+  height: 50px;
+  background-color: gray;
+}
+.name {
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+.button_nav {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+}
+.first_section {
+  display: flex;
+  height: 100vh;
+  background-color: teal;
+}
+.second_section {
+  display: flex;
+  height: 500px;
+  background-color: tan;
+}
+.third_section {
+  display: flex;
+  height: 500px;
+  background-color: lightpink;
+}
+.footer {
+  display: flex;
+  height: 50px;
+  background-color: gray;
+}

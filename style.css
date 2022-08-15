@@ -2,59 +2,95 @@
   font-family: "Roboto";
   src: url(font/Roboto-Regular.ttf);
 }
-html{
+html {
   font-family: "Roboto";
 }
 body {
-  
-  display: flex;
-
   margin: 0;
 }
 .main_body {
   display: flex;
-  justify-content: center;
-  width: 100vw;
-  background-color: lightgray;
 }
 .content {
-  width: 960px;
-}
-.nav_bar {
   display: flex;
-  position: sticky;
-  top: 0;
+  flex-direction: column;
+}
+.nav,
+.first,
+.second,
+.third,
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.nav_cont,
+.first_cont,
+.second_cont,
+.third_cont,
+.footer_cont {
+  display: flex;
+  width: 970px;
+}
+.nav {
   
-  height: 50px;
+  height: 60px;
+  position: fixed;
+  top: 0px;
   background-color: gray;
 }
-.name {
-  display: flex;
-  justify-self: flex-start;
-  align-self: center;
+.nav_cont {
+  color: white;
+  align-items: center;
+  justify-content: space-between;
 }
-.button_nav {
+.nav_buttons {
+  border-width: 0px;
   display: flex;
-  justify-content: flex-end;
-  align-self: center;
 }
-.first_section {
-  display: flex;
+.nav_butt {
+  font-size: 18px;
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+.first {
+  background-image: url(https://picsum.photos/id/1025/1920/1080);
   height: 100vh;
   background-color: teal;
 }
-.second_section {
-  display: flex;
-  height: 500px;
-  background-color: tan;
+.first_cont {
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 3px black;
 }
-.third_section {
-  display: flex;
-  height: 500px;
-  background-color: lightpink;
+.first_cont>h2{
+  font-size: 35px;
+  width: 550px;
+}
+.first_cont>p{
+  font-size: 20px;
+}
+.first_cont>button{
+  color:white;
+  font-size: 20px;
+  border: solid white;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 5px 40px;
+  margin: 20px 0px;
+}
+.second {
+  height: 400px;
+  background-color: lightblue;
+}
+.third {
+  height: 400px;
+  background-color: lightgreen;
 }
 .footer {
-  display: flex;
-  height: 50px;
-  background-color: gray;
+  height: 75px;
+  background-color: lightgray;
 }

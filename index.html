@@ -17,12 +17,20 @@
       <div class="content">
         <nav class="nav">
           <div class="nav_cont">
-            <h1>Moja Firma</h1>
+            <h1 class="h1">Moja Firma</h1>
             <div class="nav_buttons">
-              <button class="nav_butt">O nas</button>
-              <button class="nav_butt">Oferta</button>
-              <button class="nav_butt">Kontakt</button>
+              <button class="href">
+                <a href="#o_nas" class="nav_butt">O nas</a>
+              </button>
+              <button class="href">
+                <a href="#oferta" class="nav_butt">Oferta</a>
+              </button>
+              <button class="kontakt href">
+                <a href="" onclick="return false;" class="kontakt nav_butt"
+                  >Kontakt</a>
+              </button>
             </div>
+            <i class="fa-solid fa-bars"></i>
           </div>
         </nav>
         <div class="first">
@@ -30,11 +38,13 @@
             <div class="first_cont">
               <h2>Nasza firma oferuje najwyzszej jakosci produkty.</h2>
               <p>Nie wierz nam na slowo - sprawdz</p>
-              <p class="first_oferta">Oferta</p>
+              <button class="href">
+                <a href="#oferta" class="first_oferta">Oferta</a>
+              </button>
             </div>
           </div>
         </div>
-        <div class="second">
+        <div id="o_nas" class="second">
           <div class="second_cont">
             <h3>Nasi Specjalisci</h3>
             <div class="spec">
@@ -79,7 +89,7 @@
             <div class="spec">
               <div class="foto"></div>
               <div class="spec_info">
-                <p >Daniel Pretki [ dzial ]</p>
+                <p>Daniel Pretki [ dzial ]</p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                   totam exercitationem suscipit omnis excepturi maiores veniam
@@ -91,7 +101,7 @@
             </div>
           </div>
         </div>
-        <div class="third">
+        <div id="oferta" class="third">
           <div class="third_cont">
             <h4>Czym zajmuje sie nasza Firma?</h4>
             <div class="main_servi">

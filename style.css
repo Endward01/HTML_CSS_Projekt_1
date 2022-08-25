@@ -2,7 +2,7 @@
   font-family: "Roboto";
   src: url(font/Roboto-Regular.ttf);
 }
-html {
+* {
   scroll-behavior: smooth;
   font-family: "Roboto";
 }

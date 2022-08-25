@@ -25,7 +25,6 @@ html {
 .second_cont,
 .third_cont,
 .footer_cont {
-  justify-content: center;
   width: 970px;
 }
 .nav *,
@@ -43,7 +42,7 @@ h4,
 h5 {
   font-weight: 500;
   font-size: 36px;
-  line-height: 42px;
+  /* line-height: 42px; */
 }
 p,
 a {
@@ -62,7 +61,7 @@ a {
   justify-content: space-between;
 }
 .nav_cont > h1 {
-  font-size: 24px;
+  font-size: 26px;
 }
 .nav_buttons {
   display: none;
@@ -120,6 +119,7 @@ a:active {
 }
 .href {
   margin: 0;
+  padding: 0;
 }
 /* ------------------------------------------------------------------------------------- */
 .second {
@@ -208,7 +208,30 @@ h5 {
   font-size: 18px;
   text-align: center;
 }
-@media screen and (min-width: 740px) {
+
+@media screen and (min-width: 640px) {
+  .footer_cont {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer {
+    height: 70px;
+  }
+  .nav_buttons {
+    display: flex;
+  }
+  .nav_cont > i {
+    display: none;
+  }
+  .servi {
+    width: 250px;
+    height: 250px;
+    /* aspect-ratio: 1/1; */
+  }
+  .red_dot {
+    transform: translate(-125px, -125px);
+    width: 30px;
+  }
   .spec:nth-child(even) {
     flex-direction: row;
   }
@@ -225,13 +248,17 @@ h5 {
   .spec:nth-child(odd) > .foto {
     transform: scaleX(-1);
   }
-  .nav_buttons {
-    display: flex;
+  h3,
+  h4 {
+    align-self: flex-start;
   }
-  .footer_cont {
-    justify-content: space-between;
-    flex-direction: row;
+  .foto {
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
   }
+}
+@media screen and (min-width: 1024px) {
   .first_oferta {
     transition: all 1s ease-in-out;
   }
@@ -239,30 +266,22 @@ h5 {
     background: white;
     color: black;
   }
-  .footer {
-    height: 70px;
-  }
   .servi {
     width: 250px;
+    height: 250px;
     transition: all 0.5s ease-in-out;
   }
   .servi:hover {
     transform: scale(1.05);
   }
+  .foto {
+    width: 200px;
+    height: 200px;
+    
+  }
   .red_dot {
-    transform: translate(-125px, -125px);
+
     width: 22px;
   }
-  h3,
-  h4 {
-    align-self: flex-start;
-  }
-  .foto {
-    height: 200px;
-    width: 200px;
-    flex-wrap: wrap;
-  }
-  .nav_cont > i {
-    display: none;
-  }
+
 }

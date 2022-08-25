@@ -34,7 +34,6 @@ html {
 .footer * {
   margin: 10px;
 }
-
 h1,
 h2,
 h3,
@@ -42,14 +41,12 @@ h4,
 h5 {
   font-weight: 500;
   font-size: 36px;
-  /* line-height: 42px; */
 }
 p,
 a {
   font-weight: 400;
   font-size: 18px;
 }
-/* ---------------------------------------------------------------------------------------- */
 .nav {
   position: absolute;
   height: 50px;
@@ -87,7 +84,6 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-/* ------------------------------------------------------------------------------------- */
 .first {
   height: 100vh;
 }
@@ -121,7 +117,6 @@ a:active {
   margin: 0;
   padding: 0;
 }
-/* ------------------------------------------------------------------------------------- */
 .second {
   background-color: #f1f1f1;
 }
@@ -150,7 +145,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
 }
-/* ------------------------------------------------------------------------------------- */
 .third {
   background-color: #405d78;
 }
@@ -192,7 +186,6 @@ h4 {
   background: #e07a64;
   transform: translate(-150px, -150px);
 }
-/* ------------------------------------------------------------------------------------- */
 .footer {
   height: 150px;
   background-color: #4e4e4e;
@@ -208,7 +201,6 @@ h5 {
   font-size: 18px;
   text-align: center;
 }
-
 @media screen and (min-width: 640px) {
   .footer_cont {
     justify-content: space-between;
@@ -226,7 +218,6 @@ h5 {
   .servi {
     width: 250px;
     height: 250px;
-    /* aspect-ratio: 1/1; */
   }
   .red_dot {
     transform: translate(-125px, -125px);
@@ -274,14 +265,7 @@ h5 {
   .servi:hover {
     transform: scale(1.05);
   }
-  .foto {
-    width: 200px;
-    height: 200px;
-    
-  }
   .red_dot {
-
     width: 22px;
   }
-
 }

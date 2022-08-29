@@ -6,11 +6,8 @@
   scroll-behavior: smooth;
   font-family: "Roboto";
 }
-.main_body * {
+.content * {
   display: flex;
-}
-.content {
-  flex-direction: column;
 }
 .nav,
 .first,
@@ -20,12 +17,8 @@
   justify-content: center;
   width: 100%;
 }
-.nav_cont,
-.first_cont,
-.second_cont,
-.third_cont,
-.footer_cont {
-  width: 970px;
+.container {
+  width: 960px;
 }
 .nav *,
 .first *,
@@ -52,12 +45,12 @@ a {
   height: 50px;
   background-color: #4e4e4e;
 }
-.nav_cont {
+.nav .container {
   color: white;
   align-items: center;
   justify-content: space-between;
 }
-.nav_cont > h1 {
+.nav h1 {
   font-size: 26px;
 }
 .nav_buttons {
@@ -70,13 +63,13 @@ button {
   border: 0;
   background-color: rgba(255, 255, 255, 0);
 }
-.nav_cont > i {
+.nav .container i {
   font-size: 1.5em;
 }
-.kontakt:disabled {
+.contact:disabled {
   background-color: #4e4e4e;
 }
-.kontakt {
+.contact {
   cursor: not-allowed;
 }
 a:link,
@@ -92,13 +85,13 @@ a:active {
   background-position: center;
   background-size: cover;
 }
-.first_cont {
+.background_shadow .container {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   color: white;
 }
-.first_oferta {
+.first_offer {
   color: white;
   border: solid #ffffff;
   width: 165px;
@@ -120,7 +113,7 @@ a:active {
 .second {
   background-color: #f1f1f1;
 }
-.second_cont {
+.second .container {
   flex-direction: column;
   justify-content: center;
 }
@@ -154,7 +147,7 @@ h4 {
   font-size: 26px;
   color: white;
 }
-.third_cont {
+.third .container {
   flex-direction: column;
 }
 .main_servi {
@@ -190,7 +183,7 @@ h4 {
   height: 150px;
   background-color: #4e4e4e;
 }
-.footer_cont {
+.footer .container {
   font-size: 20px;
   color: white;
   justify-content: center;
@@ -202,7 +195,7 @@ h5 {
   text-align: center;
 }
 @media screen and (min-width: 640px) {
-  .footer_cont {
+  .footer .container {
     justify-content: space-between;
     flex-direction: row;
   }
@@ -212,7 +205,7 @@ h5 {
   .nav_buttons {
     display: flex;
   }
-  .nav_cont > i {
+  .nav .container > i {
     display: none;
   }
   .servi {
@@ -250,10 +243,10 @@ h5 {
   }
 }
 @media screen and (min-width: 1024px) {
-  .first_oferta {
+  .first_offer {
     transition: all 1s ease-in-out;
   }
-  .first_oferta:hover {
+  .first_offer:hover {
     background: white;
     color: black;
   }
